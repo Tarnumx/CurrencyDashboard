@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="apidocs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../swixml_240/swixml_240/build/swixml.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../jgoodies-forms-1.8.0/jgoodies-forms-1.8.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../jgoodies-common-1.8.1/jgoodies-common-1.8.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../jgoodies-forms-1.8.0/jgoodies-forms-1.8.0-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../jgoodies-common-1.8.1/jgoodies-common-1.8.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../jgoodies-forms-1.8.0/jgoodies-forms-1.8.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../jgoodies-forms-1.8.0/jgoodies-forms-1.8.0-tests.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../jgoodies-common-1.8.1/jgoodies-common-1.8.1-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../jgoodies-common-1.8.1/jgoodies-common-1.8.1-tests.jar!/" />
+    </SOURCES>
+  </library>
+</component>

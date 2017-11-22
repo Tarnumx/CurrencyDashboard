@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<frame
+        xmlns="http://www.swixml.org/2007/SwixmlTags"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.swixml.org/2007/SwixmlTags http://www.swixml.org/2007/swixml.xsd"
+        location="300,200" size="640,220" title="Currency Dashboard" defaultCloseOperation="JFrame.EXIT_ON_CLOSE" plaf="com.sun.java.swing.plaf.windows.WindowsLookAndFeel">
+
+
+
+        <!--<panel layout="borderlayout" constraints="BorderLayout.CENTER">
+            <splitpane dividerLocation="200">
+                <panel>
+                    <buttongroup>
+                        <vbox>
+                            <label text="Choose Currency:"/>
+                            <separator/>
+                            <radiobutton id="usd" text="US Dollars"/>
+                            <radiobutton id="eur" text="Euro"/>
+                            <radiobutton id="gbp" text="UK Pounds"/>
+                            <separator/>
+                            <button text="View" action="view"/>
+                        </vbox>
+                    </buttongroup>
+                </panel>
+
+
+                <panel id="preview" border="LoweredBevelBorder">
+
+                    &lt;!&ndash;<label id="currency"/>&ndash;&gt;
+                    <table id="curTable" />
+                </panel>
+
+            </splitpane>
+        </panel>-->
+
+    <panel layout="borderlayout" constraints="BorderLayout.CENTER">
+        <splitpane dividerLocation="200">
+            <panel>
+                <layout type="FormLayout"
+                        columns="10dlu, pref"
+                        rows="10dlu, pref, 5dlu, pref, 5dlu, pref, 5dlu, pref, 5dlu, pref"/>
+                    <buttongroup>
+                        <label text="Choose Currency:"          constraints="2, 2"/>
+                        <radiobutton id="usd" text="US Dollars" constraints="2, 4"/>
+                        <radiobutton id="eur" text="Euro"       constraints="2, 6"/>
+                        <radiobutton id="gbp" text="UK Pounds"  constraints="2, 8"/>
+                        <button text="View" action="view"       constraints="2, 10"/>
+                    </buttongroup>
+            </panel>
+
+            <panel id="preview" border="LoweredBevelBorder">
+                <table id="curTable" />
+            </panel>
+        </splitpane>
+    </panel>
+
+</frame>
