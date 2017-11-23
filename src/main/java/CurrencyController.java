@@ -1,6 +1,7 @@
 import org.swixml.SwingEngine;
 
 import javax.swing.*;
+import javax.swing.plaf.synth.SynthLookAndFeel;
 import java.awt.event.ActionEvent;
 
 public class CurrencyController {
@@ -10,14 +11,12 @@ public class CurrencyController {
 
     CurrencyTable ct = new CurrencyTable();
 
-    public JLabel currency;
-
-    public JRadioButton usd;
-    public JRadioButton eur;
-    public JRadioButton gbp;
+    JRadioButton usd;
+    JRadioButton eur;
+    JRadioButton gbp;
 
     public Action view = new AbstractAction() {
-        @Override
+
         public void actionPerformed(ActionEvent e) {
 
             preview.remove(curTable);
@@ -27,26 +26,34 @@ public class CurrencyController {
                 curTable = ct.initCurrency(usd);
                 preview.add(curTable);
                 preview.updateUI();
-
             }
+
             if (eur.isSelected()) {
 
-                currency.setText("EURO = 70.11");
+                curTable = ct.initCurrency(eur);
+                preview.add(curTable);
+                preview.updateUI();
             }
+
             if (gbp.isSelected()) {
 
-                currency.setText("GBP = 100.11");
+                curTable = ct.initCurrency(gbp);
+                preview.add(curTable);
+                preview.updateUI();
             }
         }
     };
 
     private CurrencyController() throws Exception {
-
+        /*SynthLookAndFeel synth = new SynthLookAndFeel();
+        synth.load(CurrencyController.class.getResourceAsStream("mystyle"), CurrencyController.class);
+        UIManager.setLookAndFeel(synth);*/
         new SwingEngine(this).render("currency_main_page.xml").setVisible(true);
 
     }
 
     public static void main(String[] args) throws Exception {
+
         new CurrencyController();
 
     }

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<synth>
+
+    <style id="button">
+        <state>
+            <imagePainter method="buttonBackground" path="images/button.png"
+                          sourceInsets="9 10 9 12" paintCenter="true" stretch="true"/>
+            <insets top="9" left="10" bottom="9" right="12"/>
+            <font name="Aharoni" size="16"/>
+            <color type="TEXT_FOREGROUND" value="#FFFFFF"/>
+        </state>
+        <state value="MOUSE_OVER">
+            <imagePainter method="buttonBackground" path="images/button_on.png"
+                          sourceInsets="9 10 9 12" paintCenter="true" stretch="true"/>
+            <insets top="9" left="10" bottom="9" right="12"/>
+            <color type="TEXT_FOREGROUND" value="#FFFFFF"/>
+        </state>
+        <state value="PRESSED">
+            <imagePainter method="buttonBackground" path="images/button_press.png"
+                          sourceInsets="10 12 8 9" paintCenter="true" stretch="true"/>
+            <insets top="10" left="12" bottom="8" right="9"/>
+            <color type="TEXT_FOREGROUND" value="#FFFFFF"/>
+        </state>
+        <property key="Button.margin" type="insets" value="0 0 0 0"/>
+    </style>
+    <bind style="button" type="region" key="Button"/>
+
+
+</synth>

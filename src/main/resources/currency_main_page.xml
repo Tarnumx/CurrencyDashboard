@@ -8,32 +8,6 @@
 
 
 
-        <!--<panel layout="borderlayout" constraints="BorderLayout.CENTER">
-            <splitpane dividerLocation="200">
-                <panel>
-                    <buttongroup>
-                        <vbox>
-                            <label text="Choose Currency:"/>
-                            <separator/>
-                            <radiobutton id="usd" text="US Dollars"/>
-                            <radiobutton id="eur" text="Euro"/>
-                            <radiobutton id="gbp" text="UK Pounds"/>
-                            <separator/>
-                            <button text="View" action="view"/>
-                        </vbox>
-                    </buttongroup>
-                </panel>
-
-
-                <panel id="preview" border="LoweredBevelBorder">
-
-                    &lt;!&ndash;<label id="currency"/>&ndash;&gt;
-                    <table id="curTable" />
-                </panel>
-
-            </splitpane>
-        </panel>-->
-
     <panel layout="borderlayout" constraints="BorderLayout.CENTER">
         <splitpane dividerLocation="200">
             <panel>
@@ -50,7 +24,7 @@
             </panel>
 
             <panel id="preview" border="LoweredBevelBorder">
-                <table id="curTable" />
+                <table id="curTable"/>
             </panel>
         </splitpane>
     </panel>
